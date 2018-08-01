@@ -296,10 +296,8 @@ textarea {
 .price_table {
   margin: 60px auto; }
 .price_table .box {
-  display: block;
-  float: left;
   display: inline-block;
-  width: 33.3333333333%;
+  width: 33.00330033%;
   margin: 40px auto; }
 .price_table .box h3 {
   color: #46c0e5;
@@ -318,6 +316,7 @@ textarea {
   font-family: tahoma;
   font-weight: 200; }
 .price_table .more, .price_table .less {
+  width: 100%;
   color: #46c0e5;
   display: block;
   text-align: center;

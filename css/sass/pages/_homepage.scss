@@ -1,10 +1,8 @@
 .price_table{
     margin: 60px auto;
     .box{
-        display: block;
-        float: $float-left;
         display: inline-block;
-        width: (100%/3);
+        width: (100%/3.03);
         margin: 40px auto;
         
         h3{
@@ -31,6 +29,7 @@
         }
     }
     .more, .less{
+        width: 100%;
             color:$blueColor;
             display: block;
             text-align: center;
