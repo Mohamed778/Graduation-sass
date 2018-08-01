@@ -1,0 +1,89 @@
+.header{
+    position: relative;
+    background: linear-gradient(to bottom right, #283048,#859398);
+    height: 500px;
+    padding: 0;
+    .logo{
+        width: 60%;
+        margin-top: 100px;
+        float: $float-left;
+        span{
+            line-height: 1%;
+            font-size: 60px;
+            font-weight: 700;
+            background: -webkit-linear-gradient( #209cff 0%, #68e0cf 100%);
+            @include prefixer (background-clip, text, moz o webkit);
+            @include prefixer (text-fill-color, transparent, moz o webkit);
+            img{
+                width: 44px;
+	            transform-origin: center center;
+	            transform: scale(1);
+	            opacity: 1;
+	            @include prefixer (animation, (heart 1.2s 1 linear, beats 1s 1.4s infinite), moz o webkit);
+               }
+            @keyframes heart {
+	                         0%{transform:scale(10);opacity: 0;
+                             }
+                         	100%{transform: scale(1);opacity: 1}
+                            }
+            @keyframes beats {
+                             50%{transform: scale(1.1);}
+                              100%{transform: scale(1);}
+                             }
+        }
+        & > img{
+                width: 260px;
+                margin-top: -9%;
+                margin-bottom: -6%;
+               }
+        
+    }
+    .navbar{
+        width: 40%;
+        float: $float-left;
+        margin-top: 10px;
+            li{
+                font-size: 18px;
+                width: 30%;
+                text-align: center;
+                float: left;
+                
+               a{
+                  display: block;
+                   color: $blueColor;
+                   text-decoration: none;
+                   padding: 10px 0;
+                   cursor: pointer;
+                   @include prefixer (border-radius, 10px, moz o webkit);
+                   @include prefixer (transition, all .5s ease-in-out , moz o webkit);
+                   &:hover{
+                       color: $whiteColor;
+                        i{ 
+                       color:$whiteColor
+                   }
+                   }
+                   i{
+                       @include prefixer (transition, all .5s ease-in-out , moz o webkit);
+                       cursor: pointer;
+                       display: inline; 
+                       color:$blueColor
+                   }
+                &.active{
+     color: $whiteColor;
+     background-color: $blueColor
+                   }
+}   
+              }
+           &>img{
+               position: absolute;
+               bottom: 80px;
+    }
+          }
+         & > img{
+        height: 100px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%
+    }    
+}

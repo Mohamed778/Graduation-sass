@@ -1,0 +1,82 @@
+.price_table{
+    margin: 60px auto;
+    .box{
+        display: block;
+        float: $float-left;
+        display: inline-block;
+        width: (100%/3);
+        margin: 40px auto;
+        
+        h3{
+            color:$blueColor;
+            text-align: center;
+            margin: 20px auto ;
+            font: {
+                weight:300 
+            }
+            i{  padding-right:5px;
+                display: inline-block;
+            }
+        }
+        p{
+            color:#888;
+            line-height: 1.5;
+            padding: 10px 15px;
+            height: 80px;
+            font:{
+                size:14px;
+                family:tahoma;
+                weight:200;
+            } 
+        }
+    }
+    .more, .less{
+            color:$blueColor;
+            display: block;
+            text-align: center;
+        font-weight: 300;
+        cursor: pointer;
+    }
+    .hide{
+        display: none
+    }
+}
+.map{
+    margin-top: 20px;
+  background: url('../img/map.jpg');
+  height:400px;
+  width: 100%;
+  position: relative;
+     .over{
+          position: absolute;
+          width: 100%;
+          background: rgba(2, 2, 2, 0.7);
+          height: 400px;
+          h2{
+            text-align:center;
+              margin:5% 40% 0%;
+              color:$blueColor;
+              font-size: 120%;
+              font-weight: 400;
+            font-family:"Amiri",arial,sans-serif;
+              padding: 1em
+              }
+             a{
+              text-decoration: none;
+              position: absolute;
+              color:$whiteColor;
+              padding: 10px;
+              font-size: 120%;
+              font-family: "Amiri",arial,sans-serif;
+              margin: 0% 46%;
+              border:2px solid #999;
+              border-radius: 5px;
+              @include prefixer(transition, all .5s ease-in-out, moz o webkit);
+              cursor: pointer;
+              &:hover, &:focus{
+              background-color: #46c0e5;
+              border: 2px solid #46c0e5
+            }
+         }
+    }
+}

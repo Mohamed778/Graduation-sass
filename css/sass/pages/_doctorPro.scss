@@ -1,0 +1,103 @@
+.profile {
+    overflow: hidden;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    height: 700px
+}
+
+.option-box {
+    padding-bottom: 20px;
+    position: fixed;
+    right: -220px;
+    top: 0;
+    z-index: 9999;
+    margin-bottom: 30px;
+    .option-color {
+        height: 700px;
+        float: right;
+        border-radius: 5px;
+        background: #293949;
+        color: $whiteColor;
+        padding: 10px;
+        width: 250px;
+        @include prefixer(box-shadow,
+        (1px -1px 2px 1px #333, -1px 1px 2px 1px #333),
+        moz webkit o);
+        display: block;
+        ul{
+            padding-right: 0;
+            margin-right: 0;
+            margin-top: 80px;
+            margin-left: 20px;
+            li {
+                font-size: 20px;
+                display: block;
+                margin-right: 5px;
+                padding-bottom: 15px;
+                cursor: pointer;
+                text-align: center;
+                border-bottom: 3px solid rgba(2, 2, 2, .1);
+                &:last-of-type {
+                    border: none
+                }
+                &>a {
+                    text-decoration: none;
+                    color: #5D5F63;
+                    transition: all .5s ease-in-out;
+                    padding: 5px 10px;
+                    font-family: "Amiri", arial;
+                    &:hover {
+                        color: $whiteColor;
+                    }
+                }
+            }
+        }
+        .active a {
+            color: $whiteColor;
+        }
+        .fa-angle-right {
+            float: left;
+            left: 2px;
+            margin-bottom: 40px;
+            display: none;
+            font-weight: 900;
+            color: $blueColor;
+            cursor: pointer;
+        }
+    }
+        .gear-box {
+            padding: 15px 10px;
+            color: $blueColor;
+            cursor: pointer;
+            margin-top: 200px;
+            span {
+                font-size: 26px;
+                padding-right: 10px;
+            }
+        }
+            }
+        
+        .form-check {
+            color: $whiteColor;
+            float: $float-left;
+            margin-top: 30px;
+            margin-right: 40px;
+        }
+        h4 {
+            margin: 0;
+            display: inline-block;
+            width: 40%;
+            font-size: 20px;
+            padding-top: 25px;
+            color: $blueColor;
+            font-weight: 500;
+            text-align: left;
+            float: $float-left;
+            padding-right: 20px
+        }
+.groups{
+   position: absolute;
+    bottom: 150px;
+    left:100px;
+}

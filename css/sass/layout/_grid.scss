@@ -1,0 +1,7 @@
+.container{
+    width:80%;
+    margin: auto
+}
+* {
+@include prefixer(box-sizing, border-box, moz webkit o )
+}

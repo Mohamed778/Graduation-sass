@@ -1,0 +1,41 @@
+.btn{
+            position: relative;
+            margin: 10px auto;
+            text-decoration: none;
+            overflow: hidden;
+            text-align: center;
+            border: none;
+            border-radius: 10px;
+            padding: 10px 30px;
+            color:$whiteColor;
+            background: $blueColor;  
+        span:first-of-type{
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            width: 0;
+            height: 100%;
+            display: block;
+            top: 0;
+            left: 0;
+            border-radius: 10px;
+            background:#6c5ce7;
+            z-index: 1;
+        }
+    span:last-of-type{
+        z-index: 2;
+        position: relative;
+    }
+}
+.form-control {
+        display: inline-block;
+        width: 250px;
+         height: 30px;
+         border-radius: 5px;
+    margin: 20px;
+        border: 1px solid #ccc;
+    }
+textarea{
+    border: none;
+    border-radius: 5px;
+}
